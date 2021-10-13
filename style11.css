@@ -16,7 +16,7 @@
 
 .main_header {
   width: inherit;
-  height: 20px;
+  height: 10px;
   background-color: #005eaa33;
 }
 
@@ -48,20 +48,21 @@
   letter-spacing: 0px;
   color: #7d7d7d;
   opacity: 1;
+  float: left;
+  margin-left: 2.5vw;
 }
 
-.subtitle {
-  margin-top: 5px;
-  font: normal normal bold 30px/22px Proxima Nova;
+.out {
+  float: left;
+  margin-left: 12vw;
+  font: normal normal bold 20px/22px Proxima Nova;
   letter-spacing: 0px;
-  color: #000000;
-  opacity: 1;
+  color: #005eaa;
+  cursor: pointer;
 }
 
-.upload {
-  position: relative;
-  text-align: end;
-  margin-right: 5vw;
+.out:hover {
+  font: normal normal bold 25px/22px Proxima Nova;
 }
 
 .btn {
@@ -87,50 +88,104 @@
   background-color: #005eaa;
 }
 
-.qa {
-  margin: 3vh 3vw;
-  border-bottom: 1px solid #00000029;
-  padding-bottom: 1vh;
+.details {
+  margin-top: 4vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.qa .question {
-  text-align: left;
-  font: normal normal bold 19px/30px Proxima Nova;
+.group {
+  position: relative;
+  margin-bottom: 45px;
+  margin: 2vh 3vw;
+}
+
+input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 360px;
+  border: none;
+  border-bottom: 1px solid #757575;
+}
+
+input:focus {
+  outline: none;
+}
+
+.input-lg {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 810px;
+  border: none;
+  border-bottom: 1px solid #757575;
+}
+
+/* LABEL ======================================= */
+label {
+  font: normal normal 600 21px/22px Proxima Nova;
   letter-spacing: 0px;
-  color: #333333;
-  opacity: 1;
-  margin-top: 1vh;
+  color: #707070;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
 }
 
-.qa .hospital {
-  text-align: left;
-  font: normal normal normal 16px/24px Proxima Nova;
-  letter-spacing: 0px;
-  color: #6F6F6F;
+/* active state */
+input:focus ~ label,
+input:valid ~ label {
+  top: -20px;
+  font-size: 20px;
+  font-weight: 800;
+  color: #5264ae;
 }
 
-.qa .hospital span {
-  text-align: left;
-  font: normal normal 600 17px/24px Proxima Nova;
-  letter-spacing: 0px;
-  color: #333333;
+/* BOTTOM BARS ================================= */
+.bar {
+  position: relative;
+  display: block;
+  width: 300px;
 }
 
-.qa .date {
-  text-align: left;
-  font: normal normal normal 16px/24px Proxima Nova;
-  letter-spacing: 0px;
-  color: #6F6F6F;
+.bar:before,
+.bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
 }
 
-.qa .date span {
-  text-align: left;
-  font: normal normal 600 17px/24px Proxima Nova;
-  letter-spacing: 0px;
-  color: #333333;
+.bar:before {
+  left: 50%;
 }
 
-.last {
-  border-bottom: 1px solid transparent;
+.bar:after {
+  right: 50%;
+}
+
+/* active state */
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+  width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
 }
 /*# sourceMappingURL=style11.css.map */
