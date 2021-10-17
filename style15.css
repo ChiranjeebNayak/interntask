@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 60vw;
+  height: 80vh;
+  margin: 10vh auto;
+  border: 1px solid blue;
+  -webkit-box-shadow: inset 12px 12px 51px #00000029, 20px 20px 20px #00000029;
+          box-shadow: inset 12px 12px 51px #00000029, 20px 20px 20px #00000029;
+}
+
+.main_header {
+  width: inherit;
+  height: 20px;
+  background-color: #005eaa33;
+}
+
+.profile {
+  position: absolute;
+  border-left: 450px solid transparent;
+  border-right: 470px solid transparent;
+  border-top: 100px solid #005eaa33;
+}
+
+.profile_img {
+  margin: 2vh auto;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #7d7d7d;
+  border-radius: 72px;
+  background: transparent url("img/Image 1.png") 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.heading {
+  position: absolute;
+  margin: 0vh 47.6vh;
+  text-align: center;
+}
+
+.title {
+  font: normal normal 600 25px/22px Proxima Nova;
+  letter-spacing: 0px;
+  color: #7d7d7d;
+  opacity: 1;
+}
+
+.subtitle {
+  margin-top: 5px;
+  font: normal normal bold 30px/22px Proxima Nova;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.upload {
+  position: relative;
+  text-align: end;
+  margin-right: 5vw;
+}
+
+.btn {
+  width: 180px;
+  height: 50px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #005eaa;
+  border-radius: 25px;
+  opacity: 1;
+  text-align: left;
+  font: normal normal 600 18px/25px Proxima Nova;
+  letter-spacing: 0px;
+  color: #005eaa;
+  text-align: center;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  background-color: #005eaa;
+}
+
+.results {
+  margin: 3vh 3vw;
+  font: normal normal bold 24px/29px Proxima Nova;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+
+.qa {
+  margin: 3vh 3vw;
+  border-bottom: 1px solid #00000029;
+  padding-bottom: 1vh;
+}
+
+.qa .question {
+  text-align: left;
+  font: normal normal bold 19px/30px Proxima Nova;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+  margin-top: 1vh;
+}
+
+.qa .hospital {
+  text-align: left;
+  font: normal normal normal 16px/24px Proxima Nova;
+  letter-spacing: 0px;
+  color: #6f6f6f;
+}
+
+.qa .hospital span {
+  text-align: left;
+  font: normal normal 600 17px/24px Proxima Nova;
+  letter-spacing: 0px;
+  color: #333333;
+}
+
+.qa .date {
+  text-align: left;
+  font: normal normal normal 16px/24px Proxima Nova;
+  letter-spacing: 0px;
+  color: #6f6f6f;
+}
+
+.qa .date span {
+  font: normal normal 600 17px/24px Proxima Nova;
+  letter-spacing: 0px;
+  color: #333333;
+}
+
+.status {
+  text-align: left;
+  font: normal normal 600 17px/24px Proxima Nova;
+  letter-spacing: 0px;
+  color: #333333;
+}
+
+.green {
+  color: #23B800;
+}
+
+.red {
+  color: #FF0707;
+}
+
+.last {
+  border-bottom: 1px solid transparent;
+}
+/*# sourceMappingURL=style15.css.map */
